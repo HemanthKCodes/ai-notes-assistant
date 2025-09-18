@@ -45,7 +45,7 @@ function App() {
       const newTranscript = mockResponses[randomIndex];
 
       // Append the new transcript to the history
-      setTranscripts(prev => [...prev, newTranscript]);
+      setTranscripts(prev => [newTranscript,...prev]);
     };
 
     mediaRecorderRef.current.start();
