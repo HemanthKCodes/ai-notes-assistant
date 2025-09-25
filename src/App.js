@@ -36,9 +36,7 @@ function App() {
       const audioBlob = new Blob(audioChunksRef.current, { type: 'audio/webm' });
       const audioFile = new File([audioBlob], 'recording.webm');
       
-      // Call the backend API here
-      // Example: const response = await transcribeAudio(audioFile);
-      // setTranscript(response.text);
+     
 
       // For demo mode: show mock data
       const randomIndex = Math.floor(Math.random() * mockResponses.length);
